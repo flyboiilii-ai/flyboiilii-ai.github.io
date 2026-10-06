@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F2F4F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1110" media="(prefers-color-scheme: dark)">
+<title>Hady Ashraf — brand systems, AI-made content and growth</title>
+<meta name="description" content="Hady Ashraf, Cairo. Brand systems, AI-made content and growth for brands, creators and Web3 projects. Case studies for ORIA Jewel, Escape Away Hospitality and an AI voice agent; 50M+ organic impressions.">
+<link rel="canonical" href="https://flyboiilii-ai.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Hady Ashraf — brand systems, AI-made content and growth">
+<meta property="og:description" content="Brand systems, AI-made content and growth for brands, creators and Web3 projects. 50M+ organic impressions, no paid media.">
+<meta property="og:image" content="https://flyboiilii-ai.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hady Ashraf — brand systems, AI-made content and growth">
+<meta property="og:url" content="https://flyboiilii-ai.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://flyboiilii-ai.github.io/assets/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E7462'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='white' text-anchor='middle'%3EHA%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Hady Ashraf","alternateName":"Hady Ashraf Ibrahim","url":"https://flyboiilii-ai.github.io/","image":"https://flyboiilii-ai.github.io/assets/og-image.png","email":"mailto:flyboiilii.ai@gmail.com","jobTitle":"Brand systems, AI-made content and growth","address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"},"knowsLanguage":["ar","en"],"sameAs":["https://www.linkedin.com/in/hady-ashraf-entrepreneur/","https://www.instagram.com/flyboiilii/","https://www.tiktok.com/@flyboiilii"]}
+</script>
+<style>
+  @font-face { font-family: "Archivo"; src: url("assets/fonts/archivo-latin.woff2") format("woff2"); font-weight: 500 800; font-stretch: 62% 125%; font-display: optional; }
+  :root {
+    --bg: #F2F4F3; --surface: #FFFFFF; --ink: #141816; --muted: #55605B; --faint: #616C67; --line: #DCE2DF;
+    --accent: #0E7462; --accent-soft: #E1EFEB; --result: #8F5D0E;
+    --shadow: 0 1px 2px rgba(20,24,22,.04), 0 12px 32px -12px rgba(20,24,22,.14);
+    --display: "Archivo", "Arial Narrow", Arial, sans-serif;
+    --body: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "Cascadia Mono", Consolas, "SF Mono", Menlo, monospace;
+    --ease: cubic-bezier(.2, .7, .2, 1);
+    --r: 20px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0D1110; --surface: #151B19; --ink: #E7ECEA; --muted: #A3AFAA; --faint: #8C9893;
+      --line: #25302C; --accent: #3FC4A8; --accent-soft: #15302A; --result: #E4AE55;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px -16px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0D1110; --surface: #151B19; --ink: #E7ECEA; --muted: #A3AFAA; --faint: #8C9893;
+    --line: #25302C; --accent: #3FC4A8; --accent-soft: #15302A; --result: #E4AE55;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px -16px rgba(0,0,0,.6);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 var(--body); padding-inline: clamp(20px, 4vw, 48px); padding-block: 0 120px; overflow-x: clip;
+         -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  [hidden] { display: none !important; }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+  main { display: grid; gap: clamp(88px, 12vw, 150px); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+  h1, h2, h3, h4 { font-family: var(--display); font-stretch: 118%; line-height: 1.06; margin: 0; text-wrap: balance; }
+  p { margin: 0; }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--surface); color: var(--ink); padding: 10px 14px; border-radius: 8px; z-index: 30; }
+  .skip:focus { left: 8px; }
+
+  /* ---- slim sticky nav ---- */
+  .nav { position: sticky; top: 0; z-index: 20; margin-inline: calc(-1 * clamp(20px, 4vw, 48px)); padding-inline: clamp(20px, 4vw, 48px);
+         background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 1px solid transparent; }
+  .nav .in { max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; }
+  .nav.stuck { border-bottom-color: var(--line); }
+  .brand { font-family: var(--display); font-weight: 800; font-stretch: 118%; letter-spacing: -.01em; font-size: 18px; color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+  .brand i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); margin-right: 10px; }
+  .nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; }
+  .nav li a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); text-decoration: none; border-radius: 8px; }
+  .nav li a:hover { color: var(--ink); background: var(--surface); }
+  .nav .cta { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px; background: var(--ink); color: var(--bg); font-weight: 600; font-size: 14px; text-decoration: none; }
+  .nav .cta:hover { background: var(--accent); color: #fff; }
+  @media (max-width: 860px) { .nav ul { display: none; } }
+
+  /* ---- hero ---- */
+  header { display: grid; gap: clamp(28px, 4vw, 44px); padding-top: clamp(36px, 7vw, 88px); padding-bottom: clamp(20px, 3vw, 36px); }
+  .hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(24px, 5vw, 64px); align-items: end; }
+  .hero-text { display: grid; gap: 22px; }
+  .where { font-family: var(--mono); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .where .open { color: var(--accent); display: inline-flex; align-items: center; gap: 8px; }
+  .where .open::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  h1 { font-size: clamp(56px, 11vw, 136px); font-weight: 800; letter-spacing: -.03em; line-height: .96; }
+  .role { font-size: clamp(19px, 2.4vw, 24px); color: var(--muted); max-width: 40ch; line-height: 1.45; }
+  .role strong { color: var(--ink); font-weight: 600; }
+  .portrait { width: clamp(170px, 24vw, 300px); aspect-ratio: 1; border-radius: var(--r); overflow: hidden; border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; }
+  .contact { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; border: 1px solid var(--line); background: var(--surface);
+          border-radius: 999px; padding: 8px 16px; font-size: 14px; color: var(--ink); text-decoration: none; transition: border-color .2s, transform .2s var(--ease); }
+  .chip:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .chip .h { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  button.chip { cursor: pointer; font-family: var(--body); }
+  .email { user-select: all; }
+
+  /* ---- the film strip ---- */
+  .strip-wrap { margin-inline: calc(-1 * clamp(20px, 4vw, 48px)); overflow: hidden; }
+  .strip { display: flex; gap: 14px; padding-inline: clamp(20px, 4vw, 48px); width: max-content; }
+  .strip a { display: block; flex: 0 0 auto; width: clamp(160px, 21vw, 250px); aspect-ratio: 9 / 16; border-radius: 18px; overflow: hidden; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .strip img { width: 100%; height: 100%; object-fit: cover; }
+  .strip-note { font-family: var(--mono); font-size: 12.5px; color: var(--faint); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+  /* ---- numbered section heads ---- */
+  main { counter-reset: sec; }
+  section { display: grid; gap: clamp(22px, 3vw, 32px); }
+  section > h2 { counter-increment: sec; display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 16px; font-size: 13px; font-family: var(--mono); font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-stretch: normal; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+  section > h2::before { content: counter(sec, decimal-leading-zero); color: var(--accent); }
+
+  .reach { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .fig { padding: 10px 28px 10px 0; display: grid; gap: 10px; align-content: start; }
+  .fig + .fig { padding-left: 28px; border-left: 1px solid var(--line); }
+  .num { font-family: var(--display); font-weight: 800; font-stretch: 125%; font-size: clamp(56px, 8vw, 104px); line-height: .95; letter-spacing: -.03em; color: var(--result); font-variant-numeric: tabular-nums; }
+  .fig p { color: var(--muted); font-size: 15.5px; max-width: 30ch; }
+  .fig .src { font-family: var(--mono); font-size: 12px; color: var(--faint); }
+
+  /* ---- case studies ---- */
+  .study { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: clamp(22px, 4vw, 48px); display: grid; gap: 28px; box-shadow: var(--shadow); }
+  .study + .study { margin-top: 8px; }
+  .study-head { display: grid; gap: 10px; max-width: 70ch; }
+  .kicker { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: .08em; text-transform: uppercase; }
+  .study h3 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; letter-spacing: -.02em; }
+  .lede { color: var(--muted); font-size: clamp(16px, 1.6vw, 18px); max-width: 62ch; line-height: 1.55; }
+  .study-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); align-items: start; }
+  .points { display: grid; gap: 18px; }
+  .point h4 { font-size: 17px; font-weight: 700; font-stretch: 112%; margin-bottom: 5px; }
+  .point p { color: var(--muted); font-size: 15px; }
+  .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .shots figure { margin: 0; display: grid; gap: 7px; }
+  .shots figure.wide { grid-column: 1 / -1; }
+  .shots .ph { border-radius: 14px; border: 1px solid var(--line); overflow: hidden; background: var(--bg); }
+  .shots img { width: 100%; height: auto; }
+  .shots figcaption { font-family: var(--mono); font-size: 12px; color: var(--faint); }
+  .owned { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: var(--mono); font-size: 12px; padding: 4px 9px; border-radius: 7px; background: var(--accent-soft); color: var(--accent); }
+  .note { font-size: 14px; color: var(--muted); border-left: 2px solid var(--accent); padding-left: 14px; max-width: 66ch; }
+  .measure { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .measure td { padding: 9px 0; border-bottom: 1px solid var(--line); }
+  .measure td:last-child { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); }
+  .measure td:first-child { color: var(--muted); }
+  .quote { font-family: var(--display); font-stretch: 112%; font-weight: 700; font-size: clamp(24px, 3.2vw, 34px); color: var(--ink); letter-spacing: -.01em; line-height: 1.15; }
+  .study a.go, .case a.go, footer a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 600; text-decoration: none; width: max-content; max-width: 100%; }
+  .study a.go span, .case a.go span, footer a span { border-bottom: 1px solid currentColor; }
+  .study a.go:hover span, .case a.go:hover span, footer a:hover span { border-bottom-width: 2px; }
+
+  .work { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .case { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; display: grid; gap: 10px; align-content: start; transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .2s; }
+  .case:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+  .case .top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .case h3 { font-size: 19px; font-weight: 700; }
+  .case .when { font-family: var(--mono); font-size: 12px; color: var(--faint); white-space: nowrap; }
+  .case .res { font-family: var(--display); font-stretch: 112%; font-weight: 700; color: var(--result); font-size: 17px; }
+  .case p { color: var(--muted); font-size: 14.5px; }
+
+  /* ---- AI-generated content ---- */
+  .clips { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  .clip { position: relative; display: block; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface);
+          text-decoration: none; color: var(--ink); transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
+  .clip:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .clip .ph { aspect-ratio: 9 / 16; overflow: hidden; }
+  .clip img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+  .clip:hover img { transform: scale(1.04); }
+  .clip .tag { position: absolute; top: 10px; left: 10px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; border-radius: 999px; padding: 5px 10px; background: color-mix(in srgb, var(--surface) 88%, transparent); color: var(--ink); border: 1px solid var(--line); }
+  .clip .cap { display: grid; gap: 3px; padding: 12px 14px 15px; }
+  .clip .cap strong { font-size: 14.5px; font-weight: 600; line-height: 1.35; }
+  .clip .acct { font-family: var(--mono); font-size: 12px; color: var(--faint); }
+
+  .exp { display: grid; }
+  .job { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .job .dates { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 4px; }
+  .job h3 { font-size: 19px; font-weight: 700; }
+  .job .org { color: var(--accent); font-weight: 600; }
+  .job ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: 15px; display: grid; gap: 4px; }
+
+  .cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+  .cols.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .group h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+  .group ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; color: var(--muted); font-size: 15px; }
+  .group li span { font-family: var(--mono); font-size: 12px; color: var(--faint); }
+
+  /* ---- closing ---- */
+  .close { margin-top: clamp(40px, 8vw, 96px); padding-top: clamp(32px, 5vw, 56px); border-top: 2px solid var(--ink); display: grid; gap: 22px; }
+  .close h2 { font-family: var(--display); font-size: clamp(40px, 7vw, 88px); font-weight: 800; letter-spacing: -.03em; line-height: .98; text-transform: none; color: var(--ink); border: 0; padding: 0; display: block; }
+  .close h2::before { content: none; }
+  .close p { color: var(--muted); font-size: 18px; max-width: 48ch; }
+  .close .mail { display: inline-block; padding-block: 6px; font-family: var(--display); font-size: clamp(22px, 3.4vw, 40px); font-weight: 700; font-stretch: 112%; color: var(--ink); text-decoration: none; letter-spacing: -.01em; border-bottom: 2px solid var(--accent); width: max-content; max-width: 100%; word-break: break-all; }
+  .close .mail:hover { color: var(--accent); }
+  footer { padding-top: 24px; margin-top: 40px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; color: var(--muted); font-size: 14px; }
+  footer .mono { font-family: var(--mono); font-size: 13px; }
+
+  /* ---- always-reachable contact on small screens ---- */
+  .fab { position: fixed; right: 16px; bottom: 16px; z-index: 10; display: none; align-items: center; gap: 8px; min-height: 48px; padding: 12px 18px;
+         border-radius: 999px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
+  :root[data-theme="dark"] .fab { color: #0D1110; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .fab { color: #0D1110; } }
+  @media (max-width: 860px) { .fab { display: inline-flex; } }
+
+  /* ---- motion: one observer flips .in; everything else is CSS ---- */
+  .rv { opacity: 0; transform: translateY(16px); }
+  .rv.in { opacity: 1; transform: none; transition: opacity .8s var(--ease), transform .8s var(--ease); }
+  .rv.in.d1 { transition-delay: .08s; } .rv.in.d2 { transition-delay: .16s; } .rv.in.d3 { transition-delay: .24s; }
+  .no-js .rv, .no-motion .rv { opacity: 1; transform: none; transition: none; }
+
+  @media (max-width: 860px) {
+    .study-body { grid-template-columns: 1fr; }
+    .work { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .clips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cols.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 600px) {
+    .hero { grid-template-columns: 1fr; align-items: start; }
+    .portrait { order: -1; width: 150px; }
+    h1 { font-size: clamp(52px, 17vw, 72px); }
+    .reach { grid-template-columns: 1fr; }
+    .fig, .fig + .fig { padding: 18px 0 10px; border-left: 0; }
+    .fig + .fig { border-top: 1px solid var(--line); }
+    .work, .cols, .cols.four { grid-template-columns: 1fr; }
+    .clips { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .job { grid-template-columns: 1fr; gap: 4px; }
+    main { gap: 72px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .rv, .rv.in, .case, .clip, .clip img, .chip { transition: none; transform: none; }
+  }
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav" aria-label="Sections">
+  <div class="in">
+    <a class="brand" href="#top"><i aria-hidden="true"></i>Hady Ashraf</a>
+    <ul>
+      <li><a href="#cases-h">Work</a></li>
+      <li><a href="#ai-h">AI content</a></li>
+      <li><a href="#exp-h">Experience</a></li>
+      <li><a href="#do-h">What I do</a></li>
+    </ul>
+    <a class="cta" href="mailto:flyboiilii.ai@gmail.com">Let's talk</a>
+  </div>
+</nav>
+
+<div class="wrap" id="top">
+  <header>
+    <div class="hero">
+      <div class="hero-text">
+        <div class="where"><span>Cairo, Egypt</span><span class="open">● Open to remote roles and projects · available within a week</span></div>
+        <h1>Hady Ashraf</h1>
+        <p class="role"><strong>Brand systems, AI-made content and growth</strong> for brands, creators and Web3 projects. Strategy first, then I build everything under it.</p>
+        <div class="contact">
+          <button class="chip" id="copy-email" type="button"><span class="email">flyboiilii.ai@gmail.com</span><span class="h" id="copy-note" aria-live="polite">copy</span></button>
+          <a class="chip" href="https://www.linkedin.com/in/hady-ashraf-entrepreneur/" target="_blank" rel="noopener">LinkedIn <span class="h">hady-ashraf-entrepreneur</span></a>
+          <a class="chip" href="https://www.instagram.com/flyboiilii/" target="_blank" rel="noopener">Instagram <span class="h">@flyboiilii</span></a>
+          <a class="chip" href="https://www.tiktok.com/@flyboiilii" target="_blank" rel="noopener">TikTok <span class="h">@flyboiilii</span></a>
+        </div>
+      </div>
+      <div class="portrait">
+        <picture>
+          <source type="image/avif" srcset="assets/img/hady-200.avif 200w, assets/img/hady-300.avif 300w, assets/img/hady-400.avif 400w" sizes="(max-width: 600px) 160px, (max-width: 1250px) 24vw, 300px">
+          <source type="image/webp" srcset="assets/img/hady-200.webp 200w, assets/img/hady-300.webp 300w, assets/img/hady-400.webp 400w" sizes="(max-width: 600px) 160px, (max-width: 1250px) 24vw, 300px">
+          <img src="assets/img/hady-400.webp" width="400" height="400" alt="Hady Ashraf, smiling, in a black sweater" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+    </div>
+    <div class="strip-wrap" aria-label="Recent AI-made videos">
+      <div class="strip" data-strip>
+        <a href="#ai-h" aria-label="AI avatar explainer video, in the AI-generated content section"><picture>
+          <source type="image/avif" srcset="assets/img/clip-DXFprCejNe7-180.avif 180w, assets/img/clip-DXFprCejNe7-270.avif 270w, assets/img/clip-DXFprCejNe7-360.avif 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <source type="image/webp" srcset="assets/img/clip-DXFprCejNe7-180.webp 180w, assets/img/clip-DXFprCejNe7-270.webp 270w, assets/img/clip-DXFprCejNe7-360.webp 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <img src="assets/img/clip-DXFprCejNe7-360.webp" width="361" height="640" alt="" decoding="async"></picture></a>
+        <a href="#ai-h" aria-label="ICE EG promo video, in the AI-generated content section"><picture>
+          <source type="image/avif" srcset="assets/img/clip-DUE9i3miB17-180.avif 180w, assets/img/clip-DUE9i3miB17-270.avif 270w, assets/img/clip-DUE9i3miB17-360.avif 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <source type="image/webp" srcset="assets/img/clip-DUE9i3miB17-180.webp 180w, assets/img/clip-DUE9i3miB17-270.webp 270w, assets/img/clip-DUE9i3miB17-360.webp 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <img src="assets/img/clip-DUE9i3miB17-360.webp" width="361" height="640" alt="" decoding="async"></picture></a>
+        <a href="#ai-h" aria-label="Diamonds video, in the AI-generated content section"><picture>
+          <source type="image/avif" srcset="assets/img/clip-DQbZvJ6DN_P-180.avif 180w, assets/img/clip-DQbZvJ6DN_P-270.avif 270w, assets/img/clip-DQbZvJ6DN_P-360.avif 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <source type="image/webp" srcset="assets/img/clip-DQbZvJ6DN_P-180.webp 180w, assets/img/clip-DQbZvJ6DN_P-270.webp 270w, assets/img/clip-DQbZvJ6DN_P-360.webp 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <img src="assets/img/clip-DQbZvJ6DN_P-360.webp" width="361" height="640" alt="" decoding="async"></picture></a>
+        <a href="#ai-h" aria-label="ICE EG chain video, in the AI-generated content section"><picture>
+          <source type="image/avif" srcset="assets/img/clip-DR7mbexjf_k-180.avif 180w, assets/img/clip-DR7mbexjf_k-270.avif 270w, assets/img/clip-DR7mbexjf_k-360.avif 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <source type="image/webp" srcset="assets/img/clip-DR7mbexjf_k-180.webp 180w, assets/img/clip-DR7mbexjf_k-270.webp 270w, assets/img/clip-DR7mbexjf_k-360.webp 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <img src="assets/img/clip-DR7mbexjf_k-360.webp" width="361" height="640" alt="" decoding="async"></picture></a>
+        <a href="#ai-h" aria-label="Oria Jewel necklace video, in the AI-generated content section"><picture>
+          <source type="image/avif" srcset="assets/img/clip-DX8O1QqtMwU-180.avif 180w, assets/img/clip-DX8O1QqtMwU-270.avif 270w, assets/img/clip-DX8O1QqtMwU-360.avif 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <source type="image/webp" srcset="assets/img/clip-DX8O1QqtMwU-180.webp 180w, assets/img/clip-DX8O1QqtMwU-270.webp 270w, assets/img/clip-DX8O1QqtMwU-360.webp 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <img src="assets/img/clip-DX8O1QqtMwU-360.webp" width="361" height="640" alt="" loading="lazy" decoding="async"></picture></a>
+        <a href="#ai-h" aria-label="Oria Jewel golden hour video, in the AI-generated content section"><picture>
+          <source type="image/avif" srcset="assets/img/clip-DYBngEPNmPo-180.avif 180w, assets/img/clip-DYBngEPNmPo-270.avif 270w, assets/img/clip-DYBngEPNmPo-360.avif 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <source type="image/webp" srcset="assets/img/clip-DYBngEPNmPo-180.webp 180w, assets/img/clip-DYBngEPNmPo-270.webp 270w, assets/img/clip-DYBngEPNmPo-360.webp 360w" sizes="(max-width: 600px) 150px, 22vw">
+          <img src="assets/img/clip-DYBngEPNmPo-360.webp" width="361" height="640" alt="" loading="lazy" decoding="async"></picture></a>
+      </div>
+    </div>
+    <p class="strip-note"><span>Ads, UGC-style clips and avatar videos, all made with AI. No filming.</span><span>Scroll ↓</span></p>
+  </header>
+
+  <main id="main">
+  <section aria-labelledby="reach-h">
+    <h2 id="reach-h">Organic reach, no paid media</h2>
+    <div class="reach">
+      <div class="fig rv"><div class="num">50M+</div><p>Impressions for a niche Instagram page I grew, in under a year.</p><span class="src">@egypt.cashcatch</span></div>
+      <div class="fig rv d1"><div class="num">20M+</div><p>TikTok impressions for a hip-hop artist, in six months.</p><span class="src">artist account · 6 months</span></div>
+      <div class="fig rv d2"><div class="num">40K+</div><p>Followers on my own trading and AI content for a MENA audience.</p><span class="src">30K Instagram · 10K+ TikTok</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="cases-h">
+    <h2 id="cases-h">Client work</h2>
+
+    <article class="study rv" id="oria">
+      <div class="study-head">
+        <span class="kicker">Brand system · AI production · e-commerce</span>
+        <h3>ORIA Jewel: a jewellery brand that looks established before it is</h3>
+        <p class="lede">A new jewellery brand with a product line and no photoshoot budget. I wrote the strategy, built the identity, and generated every image and video with AI.</p>
+      </div>
+      <div class="study-body">
+        <div class="points">
+          <div class="point"><h4>A 13-spread brand system</h4><p>Concept and positioning, logo variations and favicon, palette, typography, brand voice, packaging, stationery, product labelling, social application, and care and authenticity collateral. Specified far enough to go to a printer or a developer without a second conversation.</p></div>
+          <div class="point"><h4>One mark, both categories</h4><p>Upright, the circular O with its inner star reads as a ring. Turned over, it reads as a necklace: the two things the brand sells, in one favicon.</p></div>
+          <div class="point"><h4>Every photo and video generated</h4><p>Eleven carousel campaigns built around three recurring AI model personas, so the same faces return across the feed. Seven vertical videos: UGC-style, hyper-motion product ads and a collection showcase.</p></div>
+          <div class="point"><h4>What I owned</h4>
+            <div class="owned"><span class="tag">strategy &amp; positioning</span><span class="tag">identity system</span><span class="tag">content strategy</span><span class="tag">AI images</span><span class="tag">AI video</span><span class="tag">e-commerce copy</span><span class="tag">website redesign</span><span class="tag">campaigns &amp; media buying</span></div>
+          </div>
+          <p class="note">The engagement ended when the client paused spend, before the campaigns produced performance data. This is a craft case study, not a results one.</p>
+        </div>
+        <div class="shots">
+          <figure class="wide"><div class="ph" data-parallax><picture>
+            <source type="image/avif" srcset="assets/img/oria-campaign-400.avif 400w, assets/img/oria-campaign-600.avif 600w, assets/img/oria-campaign-820.avif 820w" sizes="(max-width: 860px) 92vw, 480px">
+            <source type="image/webp" srcset="assets/img/oria-campaign-400.webp 400w, assets/img/oria-campaign-600.webp 600w, assets/img/oria-campaign-820.webp 820w" sizes="(max-width: 860px) 92vw, 480px">
+            <img src="assets/img/oria-campaign-820.webp" width="820" height="1098" alt="AI-generated jewellery campaign image for ORIA Jewel" loading="lazy" decoding="async"></picture></div><figcaption>AI-generated campaign image</figcaption></figure>
+          <figure><div class="ph"><picture>
+            <source type="image/avif" srcset="assets/img/oria-favicon-450.avif 450w, assets/img/oria-favicon-700.avif 700w, assets/img/oria-favicon-900.avif 900w" sizes="(max-width: 860px) 45vw, 235px">
+            <source type="image/webp" srcset="assets/img/oria-favicon-450.webp 450w, assets/img/oria-favicon-700.webp 700w, assets/img/oria-favicon-900.webp 900w" sizes="(max-width: 860px) 45vw, 235px">
+            <img src="assets/img/oria-favicon-900.webp" width="900" height="427" alt="The ORIA favicon reading as a ring upright and a necklace inverted" loading="lazy" decoding="async"></picture></div><figcaption>Favicon: ring / necklace</figcaption></figure>
+          <figure><div class="ph"><picture>
+            <source type="image/avif" srcset="assets/img/oria-ugc-310.avif 310w, assets/img/oria-ugc-460.avif 460w, assets/img/oria-ugc-620.avif 620w" sizes="(max-width: 860px) 45vw, 235px">
+            <source type="image/webp" srcset="assets/img/oria-ugc-310.webp 310w, assets/img/oria-ugc-460.webp 460w, assets/img/oria-ugc-620.webp 620w" sizes="(max-width: 860px) 45vw, 235px">
+            <img src="assets/img/oria-ugc-620.webp" width="620" height="1102" alt="Still from an AI-generated UGC-style video" loading="lazy" decoding="async"></picture></div><figcaption>AI UGC video still</figcaption></figure>
+          <figure><div class="ph"><picture>
+            <source type="image/avif" srcset="assets/img/oria-packaging-450.avif 450w, assets/img/oria-packaging-700.avif 700w, assets/img/oria-packaging-900.avif 900w" sizes="(max-width: 860px) 45vw, 235px">
+            <source type="image/webp" srcset="assets/img/oria-packaging-450.webp 450w, assets/img/oria-packaging-700.webp 700w, assets/img/oria-packaging-900.webp 900w" sizes="(max-width: 860px) 45vw, 235px">
+            <img src="assets/img/oria-packaging-900.webp" width="900" height="514" alt="ORIA packaging and stationery mockups" loading="lazy" decoding="async"></picture></div><figcaption>Packaging &amp; stationery</figcaption></figure>
+          <figure><div class="ph"><picture>
+            <source type="image/avif" srcset="assets/img/oria-social-450.avif 450w, assets/img/oria-social-700.avif 700w, assets/img/oria-social-900.avif 900w" sizes="(max-width: 860px) 45vw, 235px">
+            <source type="image/webp" srcset="assets/img/oria-social-450.webp 450w, assets/img/oria-social-700.webp 700w, assets/img/oria-social-900.webp 900w" sizes="(max-width: 860px) 45vw, 235px">
+            <img src="assets/img/oria-social-900.webp" width="900" height="514" alt="ORIA brand system applied to social media" loading="lazy" decoding="async"></picture></div><figcaption>Social application</figcaption></figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="study rv" id="escape-away">
+      <div class="study-head">
+        <span class="kicker">Brand strategy · 45-page brand system · hospitality</span>
+        <h3>Escape Away Hospitality: one promise, told to two audiences</h3>
+        <p class="lede">A hospitality operator managing 400+ furnished units across Cairo, Sheikh Zayed, the North Coast, El Alamein and Gouna. The operation had outgrown the way it explained itself.</p>
+      </div>
+      <div class="study-body">
+        <div class="points">
+          <div class="point"><h4>The real problem wasn't design</h4><p>Escape Away sells to guests and to property owners at once. Guests want to feel something; owners want to feel safe. Before designing a page, I settled the strategy: one promise, two proofs.</p></div>
+          <div class="point"><h4>Narrative, not page order</h4><p>Four acts (About, Services, Portfolio, Process), each closing one objection in sequence, so a reader who stops halfway still leaves with the argument.</p></div>
+          <div class="point"><h4>A sub-brand structure</h4><p>City Escapes, Seaside Stays and Family &amp; Group Stays for guests, plus Holiday Escapes and City Living, so one company speaks to a family in Gouna and a professional in New Cairo without blurring either message.</p></div>
+          <div class="point"><h4>Designed proof</h4><p>Operational data turned into pages that read in three seconds: the growth curve, the portfolio mix, and the eight-step journey from property intake to owner reporting.</p></div>
+        </div>
+        <div class="points">
+          <p class="quote">“More Than a Stay. A Better Way to Host.”</p>
+          <p class="note">The line the whole company now says the same way. The deck became the default answer to “what do you do?” in owner meetings, developer conversations and the first reply to an enquiry.</p>
+          <div class="owned"><span class="tag">positioning &amp; voice</span><span class="tag">narrative architecture</span><span class="tag">sub-brands</span><span class="tag">proof design</span><span class="tag">visual system</span><span class="tag">45 pages</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="study rv" id="sandra">
+      <div class="study-head">
+        <span class="kicker">AI voice agent · lead qualification · real estate</span>
+        <h3>Sandra: an AI agent that qualifies real-estate leads in Egyptian Arabic</h3>
+        <p class="lede">Most real-estate companies don't lack leads; they lack a way to tell which ones are serious. I built the first-call layer: a voice agent that calls, asks the right questions, and hands sales a clean record.</p>
+      </div>
+      <div class="study-body">
+        <div class="points">
+          <div class="point"><h4>What I designed</h4><p>The persona and tone (Egyptian colloquial, consistent “حضرتك”), the opening and permission step, the qualification questions and their order, confirm-after-every-answer logic, the data fields, and the hand-off to sales.</p></div>
+          <div class="point"><h4>Tested on a real call, weaknesses included</h4><p>It handled an off-script question and returned to the flow, and turned “20% down payment” into “about a million” against the stated budget. It also talked over me twice, and the call ended mid-summary. Both are on the fix list.</p></div>
+          <table class="measure" aria-label="Measured from the call recording">
+            <tr><td>Call length</td><td>2:34</td></tr>
+            <tr><td>Qualification questions</td><td>7</td></tr>
+            <tr><td>Structured fields captured</td><td>11</td></tr>
+            <tr><td>Typical reply time</td><td>0.04–0.4 s</td></tr>
+            <tr><td>Overlap across the call</td><td>0.8 s</td></tr>
+          </table>
+          <a class="go" href="https://www.linkedin.com/pulse/%D8%A8%D9%86%D8%A7%D8%A1-ai-sales-agent-%D9%84%D8%AA%D8%A3%D9%87%D9%8A%D9%84-%D8%A7%D9%84%D9%80-leads-%D9%82%D8%A8%D9%84-%D9%88%D8%B5%D9%88%D9%84%D9%87%D9%85-%D9%84%D9%81%D8%B1%D9%8A%D9%82-hady-ashraf-swoje/" target="_blank" rel="noopener"><span>Read the case study and watch the call (Arabic) ↗</span></a>
+        </div>
+        <div class="shots">
+          <figure class="wide"><div class="ph" data-parallax><picture>
+            <source type="image/avif" srcset="assets/img/sandra-call-450.avif 450w, assets/img/sandra-call-700.avif 700w, assets/img/sandra-call-900.avif 900w" sizes="(max-width: 860px) 92vw, 480px">
+            <source type="image/webp" srcset="assets/img/sandra-call-450.webp 450w, assets/img/sandra-call-700.webp 700w, assets/img/sandra-call-900.webp 900w" sizes="(max-width: 860px) 92vw, 480px">
+            <img src="assets/img/sandra-call-900.webp" width="900" height="506" alt="Call view showing who is speaking and the data fields filling in live" loading="lazy" decoding="async"></picture></div><figcaption>Live call: speaker and fields captured</figcaption></figure>
+          <figure class="wide"><div class="ph"><picture>
+            <source type="image/avif" srcset="assets/img/sandra-lead-450.avif 450w, assets/img/sandra-lead-700.avif 700w, assets/img/sandra-lead-900.avif 900w" sizes="(max-width: 860px) 92vw, 480px">
+            <source type="image/webp" srcset="assets/img/sandra-lead-450.webp 450w, assets/img/sandra-lead-700.webp 700w, assets/img/sandra-lead-900.webp 900w" sizes="(max-width: 860px) 92vw, 480px">
+            <img src="assets/img/sandra-lead-900.webp" width="900" height="506" alt="The qualified lead record handed to the sales team" loading="lazy" decoding="async"></picture></div><figcaption>The lead record handed to sales</figcaption></figure>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section aria-labelledby="work-h">
+    <h2 id="work-h">More work</h2>
+    <div class="work">
+      <article class="case rv">
+        <div class="top"><h3>@egypt.cashcatch</h3><span class="when">under 1 year</span></div>
+        <div class="res">50M+ organic impressions</div>
+        <p>A niche Instagram page I grew to 50M+ organic impressions in under a year.</p>
+        <a class="go" href="https://www.instagram.com/egypt.cashcatch/" target="_blank" rel="noopener"><span>See the page ↗</span></a>
+      </article>
+      <article class="case rv d1">
+        <div class="top"><h3>ICE EG, online jewelry</h3><span class="when">2019 – now</span></div>
+        <div class="res">Founded and scaled the brand</div>
+        <p>Brand identity, positioning, product media and the whole content and marketing pipeline, plus customer experience across the sales journey.</p>
+        <a class="go" href="https://www.instagram.com/ice.eg/" target="_blank" rel="noopener"><span>See @ice.eg ↗</span></a>
+      </article>
+      <article class="case rv d2">
+        <div class="top"><h3>Hip-hop artist on TikTok</h3><span class="when">6 months</span></div>
+        <div class="res">20M+ organic impressions</div>
+        <p>Grew a hip-hop artist's TikTok to 20M+ organic impressions in six months.</p>
+      </article>
+      <article class="case rv">
+        <div class="top"><h3>@flyboiilii</h3><span class="when">ongoing</span></div>
+        <div class="res">30K Instagram · 10K+ TikTok</div>
+        <p>My own channel for crypto trading and AI content for a MENA audience. Organic reach has been growing fast since mid-2026.</p>
+        <a class="go" href="https://www.instagram.com/flyboiilii/" target="_blank" rel="noopener"><span>See the channel ↗</span></a>
+      </article>
+      <article class="case rv d1">
+        <div class="top"><h3>AI 3D music video</h3><span class="when">under 10 days</span></div>
+        <div class="res">Full scene direction</div>
+        <p>A complete 3D music video generated with AI, including full scene direction, delivered in under ten days.</p>
+      </article>
+      <article class="case rv d2">
+        <div class="top"><h3>Expo branding &amp; Web3</h3><span class="when">since 2020</span></div>
+        <div class="res">6 branding kits · a token rollout</div>
+        <p>Six branding kits and expo campaigns for investment projects on short deadlines, and content and audience strategy for a cryptocurrency launch. In Web3 since 2021.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="ai-h">
+    <h2 id="ai-h">AI-generated content</h2>
+    <p class="lede">Ads, UGC-style clips and avatar videos I made with AI tools for my own brands and for clients: script, visuals, voice and edit, with no filming. Each opens the published post on Instagram.</p>
+    <div class="clips" id="clips"></div>
+  </section>
+
+  <section aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <div class="exp">
+      <div class="job"><div class="dates">2019 – now</div>
+        <div><h3>Founder &amp; Marketing Lead · <span class="org">ICE Jewelry (ICE EG)</span></h3>
+          <ul><li>Built the brand's identity, positioning, visual direction and content output.</li>
+              <li>Led digital marketing across social platforms and e-commerce channels.</li>
+              <li>Built AI-driven marketing and sales workflows for lead generation and qualification.</li></ul></div></div>
+      <div class="job"><div class="dates">2022 – 2024</div>
+        <div><h3>Project Manager · <span class="org">BMS Media &amp; Marketing Solutions</span></h3>
+          <ul><li>Led content production and creative decisions across client projects.</li>
+              <li>Coordinated timelines, deliverables and multidisciplinary team workflows, and turned client requirements into marketing output.</li></ul></div></div>
+      <div class="job"><div class="dates">2020 – now</div>
+        <div><h3>Brand, Content &amp; AI Systems · <span class="org">Independent</span></h3>
+          <ul><li>Brand systems, AI content production and AI agents for clients including ORIA Jewel and Escape Away Hospitality.</li>
+              <li>Media production, creative direction and marketing support across projects.</li></ul></div></div>
+      <div class="job"><div class="dates">2017 – 2018</div>
+        <div><h3>Marketing Executive · <span class="org">Home Art Furniture Co.</span></h3>
+          <ul><li>Planned promotions, created product visuals and campaign content, and reported results.</li></ul></div></div>
+      <div class="job"><div class="dates">2016 – 2017</div>
+        <div><h3>Social Media Specialist · <span class="org">Beauty Club Egypt</span></h3>
+          <ul><li>Created visual content and used platform trends and formats to grow organic reach.</li></ul></div></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="do-h">
+    <h2 id="do-h">What I do</h2>
+    <div class="cols four">
+      <div class="group"><h3>Brand systems</h3><ul><li>Positioning &amp; voice</li><li>Identity: logo, palette, type</li><li>Packaging &amp; collateral</li><li>Brand guideline documents</li></ul></div>
+      <div class="group"><h3>AI production</h3><ul><li>AI campaign imagery</li><li>AI UGC videos</li><li>AI product films</li><li>AI music video <span>3D</span></li></ul></div>
+      <div class="group"><h3>Growth &amp; content</h3><ul><li>Organic social growth</li><li>Content strategy &amp; carousels</li><li>X (Twitter) &amp; Telegram</li><li>E-commerce copy</li></ul></div>
+      <div class="group"><h3>AI systems &amp; sales</h3><ul><li>AI voice agents</li><li>Lead qualification flows</li><li>Marketing automation</li><li>Sales &amp; closing <span>strongest in Arabic</span></li></ul></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="edu-h">
+    <h2 id="edu-h">Education &amp; languages</h2>
+    <div class="cols">
+      <div class="group"><h3>Bachelor of E-Media</h3><ul><li>Arab Open University <span>2018 – 2024</span></li></ul></div>
+      <div class="group"><h3>Filmmaking &amp; VFX Diploma</h3><ul><li>Fusion VFX Academy <span>2015 – 2017</span></li><li>Adobe Premiere Pro CC · After Effects CS6</li></ul></div>
+      <div class="group"><h3>Languages</h3><ul><li>Arabic <span>native</span></li><li>English <span>C2</span></li></ul></div>
+    </div>
+  </section>
+  </main>
+
+  <section class="close" aria-labelledby="close-h">
+    <h2 id="close-h">Open to remote roles and projects.</h2>
+    <p>Brand, content, growth or an AI system that does the first call for you. Available within a week, from Cairo, for any time zone.</p>
+    <a class="mail" href="mailto:flyboiilii.ai@gmail.com">flyboiilii.ai@gmail.com</a>
+  </section>
+
+  <footer>
+    <span>Hady Ashraf Ibrahim · Cairo, Egypt</span>
+    <a href="https://www.linkedin.com/in/hady-ashraf-entrepreneur/recent-activity/articles/" target="_blank" rel="noopener"><span>All case studies on LinkedIn ↗</span></a>
+    <span class="mono">flyboiilii.ai@gmail.com</span>
+  </footer>
+</div>
+
+<a class="fab" href="mailto:flyboiilii.ai@gmail.com"><span aria-hidden="true">✉</span> E-mail me</a>
+
+<script>
+  document.body.classList.remove("no-js");
+  (function () {
+    // The AI-content tiles: one list, one template. Order matches the Instagram posts.
+    var clips = [
+      ["reel","DXFprCejNe7","ice.smart.solutions","AI avatar video","AI avatar explainer: no filming, no shoot",361],
+      ["p","DUE9i3miB17","ice.eg","AI ad","ICE EG: 20% off promo (IShowSpeed in Egypt)",361],
+      ["p","DQbZvJ6DN_P","flyboiilii","AI content","People buy the feeling, not the product",361],
+      ["p","DR2LOIpDI7-","ice.eg","AI ad","ICE EG: 50% off, limited time",360],
+      ["p","DR7mbexjf_k","ice.eg","AI ad","ICE EG: 50% off, shop now",361],
+      ["p","DX6CnxEuUY_","oriajewel","AI UGC","Oria Jewel: “She is the special occasion”",361],
+      ["p","DX6vUcbHHr_","oriajewel","AI UGC","Oria Jewel: “The jewelry stays on”",640],
+      ["p","DX8O1QqtMwU","oriajewel","AI UGC","Oria Jewel: Layered Celestial Necklace, up close",361],
+      ["p","DYBngEPNmPo","oriajewel","AI ad","Oria Jewel: golden hour, summer collection",361],
+      ["p","DYK4JmIu8HB","oriajewel","AI ad","Oria Jewel: Malachite Collection, “Gold that goes where you go”",361],
+      ["p","DYLGbCGuMJL","oriajewel","AI UGC","Oria Jewel: Malachite Collection, “She doesn’t take it off”",361],
+      ["p","DYOOh4HtAza","oriajewel","AI ad","Oria Jewel: Layered Celestial Necklace, “Feel its magic”",361]
+    ];
+    var sizes = "(max-width: 600px) 45vw, (max-width: 860px) 30vw, 245px";
+    var esc = function (s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); };
+    var html = clips.map(function (c, i) {
+      var id = c[1], w = c[5], widths = w === 640 ? [320, 480, 640] : [180, 270, 360];
+      var set = function (ext) { return widths.map(function (x) { return "assets/img/clip-" + id + "-" + x + "." + ext + " " + x + "w"; }).join(", "); };
+      return '<a class="clip rv' + (i % 4 ? " d" + (i % 4) : "") + '" href="https://www.instagram.com/' + c[0] + "/" + id + '/" target="_blank" rel="noopener">' +
+        '<div class="ph"><picture><source type="image/avif" srcset="' + set("avif") + '" sizes="' + sizes + '">' +
+        '<source type="image/webp" srcset="' + set("webp") + '" sizes="' + sizes + '">' +
+        '<img src="assets/img/clip-' + id + "-" + widths[2] + '.webp" width="' + w + '" height="640" alt="' + esc(c[4]) + '" loading="lazy" decoding="async"></picture></div>' +
+        '<span class="tag">' + esc(c[3]) + '</span>' +
+        '<span class="cap"><strong>' + esc(c[4]) + '</strong><span class="acct">@' + c[2] + ' · watch on Instagram ↗</span></span></a>';
+    }).join("");
+    document.getElementById("clips").innerHTML = html;
+
+    // The nav gets its hairline once the page has scrolled past the top.
+    var nav = document.getElementById("nav");
+    var ticking = false;
+    window.addEventListener("scroll", function () {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function () { nav.classList.toggle("stuck", window.scrollY > 8); ticking = false; });
+    }, { passive: true });
+
+    // Copy the e-mail address.
+    var btn = document.getElementById("copy-email"), note = document.getElementById("copy-note");
+    var addr = "flyboiilii.ai@gmail.com";
+    btn.addEventListener("click", function () {
+      var done = function () { note.textContent = "copied"; setTimeout(function () { note.textContent = "copy"; }, 1800); };
+      try { navigator.clipboard.writeText(addr).then(done, select); } catch (e) { select(); }
+    });
+    function select() {
+      var r = document.createRange(); r.selectNodeContents(btn.querySelector(".email"));
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      note.textContent = "selected";
+    }
+
+    // Scroll reveals: one observer, CSS does the rest. Off entirely when motion is reduced.
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce || !("IntersectionObserver" in window)) { document.documentElement.classList.add("no-motion"); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
+
+    // Scroll-driven motion for the photos: GSAP + ScrollTrigger, pinned and integrity-checked, loaded only
+    // after the first frame has painted so it never delays the page.
+    function loadScript(src, integrity) {
+      return new Promise(function (ok, fail) {
+        var s = document.createElement("script"); s.src = src; s.integrity = integrity; s.crossOrigin = "anonymous";
+        s.onload = ok; s.onerror = fail; document.head.appendChild(s);
+      });
+    }
+    function motion() {
+      var g = window.gsap; if (!g || !window.ScrollTrigger) return;
+      g.registerPlugin(window.ScrollTrigger);
+      var strip = document.querySelector("[data-strip]");
+      if (strip) {
+        var travel = Math.max(0, strip.scrollWidth - strip.parentElement.clientWidth);
+        g.to(strip, { x: -travel, ease: "none", scrollTrigger: { trigger: strip.parentElement, start: "top 85%", end: "bottom -20%", scrub: 0.6 } });
+      }
+      document.querySelectorAll("[data-parallax] img").forEach(function (img) {
+        g.fromTo(img, { yPercent: -6, scale: 1.12 }, { yPercent: 6, scale: 1.12, ease: "none",
+          scrollTrigger: { trigger: img.parentElement, start: "top bottom", end: "bottom top", scrub: 0.8 } });
+      });
+    }
+    function afterPaint(fn) { requestAnimationFrame(function () { setTimeout(fn, 0); }); }
+    window.addEventListener("load", function () {
+      afterPaint(function () {
+        loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+                   "sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt")
+          .then(function () { return loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+                                                "sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d"); })
+          .then(motion, function () { /* no CDN, no motion — the page is complete without it */ });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
