@@ -79,11 +79,13 @@
   var w = 0, hgt = 0;
   function size() {
     var r = canvas.getBoundingClientRect();
+    if (r.width < 8 || r.height < 8) return false; // not laid out yet (hidden tab, collapsed frame): wait for a real size
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     w = Math.max(2, Math.round(r.width * dpr * scale));
     hgt = Math.max(2, Math.round(r.height * dpr * scale));
     if (canvas.width !== w || canvas.height !== hgt) { canvas.width = w; canvas.height = hgt; }
     gl.viewport(0, 0, w, hgt);
+    return true;
   }
 
   // pointer, eased; in shader space (centre origin, height = 1)
@@ -112,7 +114,10 @@
   }
   document.addEventListener("visibilitychange", function () { if (!document.hidden && visible && !reduce) loop(); });
 
+  var shown = false;
   function draw(t) {
+    if (w < 8 && !size()) return; // never draw into a canvas that was measured before layout
+    if (!shown) { shown = true; requestAnimationFrame(function () { canvas.classList.add("live"); }); }
     mx += (tx - mx) * 0.045; my += (ty - my) * 0.045;
     vel *= 0.94; drift += vel * 0.016;
     var hh = canvas.getBoundingClientRect();
@@ -135,7 +140,9 @@
   }
 
   size();
-  window.addEventListener("resize", function () { size(); if (reduce) draw(frozen); }, { passive: true });
+  var onSize = function () { if (size() && reduce) draw(frozen); };
+  // follow the canvas's own box, so a page that loads hidden or zero-width still gets a correct buffer later
+  if ("ResizeObserver" in window) { new ResizeObserver(onSize).observe(canvas); }
+  else { window.addEventListener("resize", onSize, { passive: true }); }
   if (reduce) { draw(frozen); } else { loop(); }
-  requestAnimationFrame(function () { canvas.classList.add("live"); });
 })();

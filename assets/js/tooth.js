@@ -131,7 +131,8 @@ async function start() {
   }
 
   frame();
-  window.addEventListener("resize", frame, { passive: true });
+  if ("ResizeObserver" in window) new ResizeObserver(frame).observe(host);
+  else window.addEventListener("resize", frame, { passive: true });
   host.classList.add("live");
   loop();
 }
