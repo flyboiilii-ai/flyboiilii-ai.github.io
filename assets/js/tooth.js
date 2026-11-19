@@ -108,12 +108,12 @@ async function start() {
   let visible = true;
   new IntersectionObserver((es) => { visible = es[0].isIntersecting; }, { rootMargin: "120px 0px" }).observe(host);
 
-  const clock = new THREE.Clock();
+  const t0 = performance.now();
   function loop() {
     requestAnimationFrame(loop);
     if (!visible || document.hidden) return;
     readScroll();
-    const t = clock.getElapsedTime();
+    const t = (performance.now() - t0) / 1000;
     split += (tSplit - split) * 0.08;
     if (!dragging) { tYaw *= 0.985; }
     yaw += (tYaw + Math.sin(t * 0.4) * 0.12 - yaw) * 0.06;

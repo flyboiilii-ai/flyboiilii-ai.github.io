@@ -330,6 +330,11 @@
       });
     }
 
+    /* ---------- founder: the three ICE handles rise in turn (created after the reel's pin, so it measures below it) ---------- */
+    var iceList = $("[data-ice]");
+    if (iceList) gsap.from($$(".ice-row", iceList), { y: 48, opacity: 0, duration: 1.2, ease: "expo.out", stagger: 0.12, clearProps: "transform,opacity",
+      scrollTrigger: { trigger: iceList, start: "top 85%", once: true } });
+
     /* ---------- cursor label + magnetic buttons (mouse only) ---------- */
     if (fine) {
       var cur = d.createElement("div"); cur.className = "cursor"; cur.setAttribute("aria-hidden", "true");
